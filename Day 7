@@ -1,0 +1,216 @@
+# Wipro-Talentnext-Java-Training
+
+
+JAVA HackerRank
+
+##1
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Print output to STDOUT. Your class should be named Solution. */
+        System.out.println("Hello, World. \nHello, Java.");
+    }
+}
+
+
+
+##2
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b=scan.nextInt();
+        int c=scan.nextInt();
+        // Complete this line
+        // Complete this line
+
+        System.out.println(a);
+        // Complete this line
+        // Complete this line
+        System.out.println(b);
+        System.out.println(c);
+    }
+}
+
+
+##3
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        scanner.close();
+        String s=" ";
+        if(N%2!=0)
+        {System.out.println("Weird");
+        }
+        else{
+        if(N>=2 && N<=5)
+        {
+                System.out.println("Not Weird");
+        }
+        else if (N>=6 && N<=20)
+        {
+            System.out.println("Weird");
+        }
+        else{
+            System.out.println("Not Weird");
+        }
+        }
+       
+    }
+}
+
+
+
+
+
+##4
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        double d=scan.nextDouble();
+        String s="";
+        while(scan.hasNext())
+        {
+            s=scan.nextLine();
+        }
+        
+        
+        
+ ##5
+ import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                //Complete this line
+                 System.out.printf("%-14s %03d\n", s1, x);
+            
+            
+            }
+            System.out.println("================================");
+
+    }
+}
+
+
+
+
+
+
+
+##6
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
+        for(int i = 1; i <=10; i++)
+        {
+            System.out.println(N + " x "+i+" = "+i*N);
+        }
+    }
+}
+
+
+
+
+
+##7
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            int calc = a;
+            for(int j=0;j<n;j++)
+            {
+                calc+=(Math.pow(2,j)*b);
+                System.out.print(calc+" ");
+            }
+            System.out.println();
+        }
+        
+        in.close();
+    }
+}
+
+
+
+
+
+
+
+##8
+import java.util.*;
+import java.io.*;
+
+
+
+class Solution{
+    public static void main(String []argh)
+    {
+        Scanner sc = new Scanner(System.in);
+        int t=sc.nextInt();
+
+        for(int i=0;i<t;i++)
+        {
+            try
+            {
+                long x=sc.nextLong();
+                System.out.println(x+" can be fitted in: ");
+                if(x>=-128 && x<=127) {System.out.println("* byte");}
+                if(x>=Short.MIN_VALUE && x<=Short.MAX_VALUE){System.out.println("* short");}
+                if(x>=Integer.MIN_VALUE && x<=Integer.MAX_VALUE){System.out.println("* int");}
+                if(x>=Long.MIN_VALUE && x<=Long.MAX_VALUE){System.out.println("* long");}
+            }
+            catch(Exception e)
+            {
+                System.out.println(sc.next()+" can't be fitted anywhere.");
+            }
+
+        }
+    }
+}
+
